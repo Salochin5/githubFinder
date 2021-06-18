@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/layout/Navbar'
-import UserItem from './components/users/UserItem'
+import Users from './components/users/Users'
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -14,7 +14,9 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar title='Github Finder' />
-        <UserItem />
+        <div className="container">
+          <Users />
+        </div>
       </div>
     )
   }
